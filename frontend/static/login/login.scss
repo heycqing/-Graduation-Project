@@ -1,0 +1,21 @@
+.loginPage-container {
+  margin: auto;
+  position: absolute;
+  width: 1240px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  .ant-form {
+    margin: auto;
+    width: 30%;
+  }
+  .login-form {
+    max-width: 300px;
+  }
+  .login-form-forgot {
+    float: right;
+  }
+  .login-form-button {
+    width: 100%;
+  }
+}
