@@ -1,0 +1,75 @@
+import React from 'react'
+import {
+    Form, Icon, Input, Button, Checkbox
+} from 'antd';
+import '../static/index/index.scss'
+
+class NormalLoginForm extends React.Component {
+    handleSubmit = (e) => {
+        e.preventDefault();
+        this.props.form.validateFields((err, values) => {
+            if (!err) {
+                console.log('Received values of form: ', values);
+            }
+        });
+    }
+
+    render() {
+        // console.log('style', style.ant_form)
+        // const { getFieldDecorator } = this.props.form;
+        // return (
+        //     <Form onSubmit={this.handleSubmit} className="ant_form">
+        //         <Form.Item>
+        //             {getFieldDecorator('userName', {
+        //                 rules: [{ required: true, message: 'Please input your username!' }],
+        //             })(
+        //                 <Input prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="Username" />
+        //             )}
+        //         </Form.Item>
+        //         <Form.Item>
+        //             {getFieldDecorator('password', {
+        //                 rules: [{ required: true, message: 'Please input your Password!' }],
+        //             })(
+        //                 <Input prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />} type="password" placeholder="Password" />
+        //             )}
+        //         </Form.Item>
+        //         <Form.Item>
+        //             {getFieldDecorator('remember', {
+        //                 valuePropName: 'checked',
+        //                 initialValue: true,
+        //             })(
+        //                 <Checkbox>Remember me</Checkbox>
+        //             )}
+        //             <a className="login-form-forgot" href="">Forgot password</a>
+        //             <Button type="primary" htmlType="submit" className="login-form-button">
+        //                 Log in
+        //             </Button>
+        //                 Or <a href="">register now!</a>
+        //         </Form.Item>
+        //     </Form>
+        // );
+
+        return (
+
+            <div>
+                213123123123123
+                <Button type="danger">Danger</Button>
+            </div>
+        )
+    }
+}
+
+// const WrappedNormalLoginForm = Form.create({ name: 'normal_login' })(NormalLoginForm);
+
+// class Index extends React.PureComponent {
+//     render() {
+//         return (
+//             <>
+//                 <WrappedNormalLoginForm />
+//             </>
+//         )
+//     }
+// }
+
+export default NormalLoginForm
+{/* ReactDOM.render(<WrappedNormalLoginForm />, mountNode); */ }
