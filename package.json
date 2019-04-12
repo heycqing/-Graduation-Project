@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next server.js",
+    "dev": "node server.js",
     "build": "next build",
     "start": "next start"
   },
@@ -27,6 +27,7 @@
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "koa": "^2.7.0",
     "koa-route": "^3.2.0",
+    "koa-router": "^7.4.0",
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
     "node-sass": "^4.11.0",
