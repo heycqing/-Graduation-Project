@@ -18,6 +18,7 @@
     "react-dom": "^16.8.6"
   },
   "dependencies": {
+    "@version/react-router-v3": "^1.0.0",
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-less": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
@@ -31,6 +32,7 @@
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
     "node-sass": "^4.11.0",
+    "react-router": "^3.2.1",
     "style-loader": "^0.23.1"
   }
 }

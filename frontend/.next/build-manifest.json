@@ -12,6 +12,22 @@
       "static/runtime/webpack.js",
       "static/runtime/webpack.css",
       "static/runtime/main.js"
+    ],
+    "/index": [
+      "static/runtime/webpack.js",
+      "static/runtime/webpack.css",
+      "static/runtime/main.js"
+    ],
+    "/login/login": [
+      "static/runtime/webpack.js",
+      "static/runtime/webpack.css",
+      "static/development/pages/login/login.css",
+      "static/runtime/main.js"
+    ],
+    "/": [
+      "static/runtime/webpack.js",
+      "static/runtime/webpack.css",
+      "static/runtime/main.js"
     ]
   }
 }

@@ -2,23 +2,34 @@ import React from 'react'
 import {
     Form, Icon, Input, Button, Checkbox
 } from 'antd';
+import Router from 'next/router'
 import axios from 'axios'
 
 import 'antd/dist/antd.css'
 import '../../static/login/login.scss'
 
 class NormalLoginForm extends React.PureComponent {
+
     handleSubmit = (e) => {
+        var that = this;
+
         e.preventDefault();
+
         this.props.form.validateFields((err, values) => {
             if (!err) {
                 console.log('Received values of form: ', values);
-                axios.post('/login', {
-                    values
-                })
+                axios.get('/api/post/login/',
+                 {params: values}
+                 )
                 .then(function (res) {
-                    console.log('axios执行成功，提交完成')
-                    console.log(res);
+                    console.log('axios执行成功，提交完成!')
+                    console.log(res.data.code);
+                    if(res.data.code === 1){
+                        // 、判断成功，跳转页面
+                        console.log('判断成功，跳转页面');
+                        Router.replace('/')
+                    }
+
                 })
                 .catch(function (err) {
                     console.log('发生错误！！')
